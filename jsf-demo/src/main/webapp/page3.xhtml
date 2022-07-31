@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Command Link</title>
+</h:head> 
+<body> 
+	<h1>Command Link</h1>
+	
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Name" />
+			<h:inputText value="#{commandLinkModel.name}" />
+	
+			<h:outputLabel value="Gender" />
+			<h:selectOneRadio value="#{commandLinkModel.gender}">
+				<f:selectItem itemValue="Male" itemLabel="Male"/>
+				<f:selectItem itemValue="Female" itemLabel="Female"/>
+			</h:selectOneRadio>
+			
+			<h:outputLabel value="Phone" />
+			<h:inputText value="#{commandLinkModel.phone}" />
+	
+			<h:outputLabel value="Email" />
+			<h:inputText value="#{commandLinkModel.email}" />
+			
+			<h:panelGroup></h:panelGroup>
+			<h:commandLink action="#{commandLinkModel.show()}" value="Send" />
+			
+		</h:panelGrid>
+	</h:form>
+</body> 
+</html>

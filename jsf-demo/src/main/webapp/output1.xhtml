@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Basic Data Type</title>
+</h:head> 
+<body> 
+	<h1>Basic Data Type</h1>
+	
+	<h:panelGrid columns="2">
+		
+		<h:outputLabel value="String Value" />
+		<h:outputText value="#{singleValueBeans.value1}" />
+	
+		<h:outputLabel value="Integer Value" />
+		<h:outputText value="#{singleValueBeans.value2}" />
+	
+		<h:outputLabel value="Double Value" />
+		<h:outputText value="#{singleValueBeans.value3}" />
+	
+		<h:outputLabel value="Date Value" />
+		<h:outputText value="#{singleValueBeans.value4}" />
+	
+		<h:outputLabel value="Enum  Value" />
+		<h:outputText value="#{singleValueBeans.value5}" />
+
+
+	</h:panelGrid>
+	
+	<h:link outcome="/index" value="Home" />
+	
+</body> 
+</html>

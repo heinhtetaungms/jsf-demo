@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Outputs</title>
+</h:head> 
+<body> 
+	<h1>Output Samples</h1>
+	
+	<ul>
+		<li>
+			<h:link outcome="/output1" value="Basic Data Type" />
+		</li>
+		<li>
+			<h:link outcome="/output2" value="Custom Object Values" />
+		</li>
+		<li>
+			<h:link outcome="/output3" value="Collections Values" />
+		</li>
+		
+	</ul>
+	<ul>
+		<li>
+			Target Components
+			<ul>
+				<li>
+					<h:link value="links" outcome="/page1"/>
+				</li>	
+				<li>
+					<h:link value="buttons" outcome="/page2"/>
+				</li>	
+
+			</ul>
+		</li>
+		
+		<li>
+			Command Action Components
+			<ul>
+				<li>
+					<h:link value="Command Links" outcome="/page3"/>
+				</li>	
+				<li>
+					<h:link value="Command buttons" outcome="/page4"/>
+				</li>	
+
+			</ul>
+		</li>
+	</ul>
+</body> 
+</html>

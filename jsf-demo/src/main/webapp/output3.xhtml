@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Collection Output</title>
+</h:head> 
+<body> 
+	<h1>Using Collection</h1>
+	
+	<h:dataTable value="#{collectionBeans.list}" var="c">
+	
+		<h:column>
+			<f:facet name="header">Course Name</f:facet>
+			#{c.name}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Level</f:facet>
+			#{c.level}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Fees</f:facet>
+			#{c.fees} MMK
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Description</f:facet>
+			#{c.description}
+		</h:column>
+	</h:dataTable>
+	
+	<h:link outcome="/index" value="Home" />
+	
+</body> 
+</html>

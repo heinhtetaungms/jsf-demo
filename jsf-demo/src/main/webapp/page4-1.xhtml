@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Command Button</title>
+</h:head> 
+<body> 
+	<h1>Command Button</h1>
+	
+			
+	
+	<h:dataTable value="#{commandButtonModel.members}" var="m">
+		<h:column>
+			<f:facet name="header">Name</f:facet>
+			#{m.name}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Gender</f:facet>
+			#{m.gender}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Phone</f:facet>
+			#{m.phone}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Email</f:facet>
+			#{m.email}
+		</h:column>
+	</h:dataTable>
+</body> 
+</html>
